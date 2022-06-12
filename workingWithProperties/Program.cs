@@ -11,18 +11,15 @@
 
 class Renderer
 {
-    public void DrawPlayer(int positionX, int positionY, char player = '0')
+    public void DrawPlayer(int positionX, int positionY, char playerChar = '0')
     {
         Console.SetCursorPosition(positionX, positionY);
-        Console.WriteLine(player);
+        Console.WriteLine(playerChar);
     }
 }
 
 class Player
 {
-    private int _playerPositionX;
-    private int _playerPositionY;
-
     public int PlayerPositionX { get; private set; }
     public int PlayerPositionY { get; private set; }
 
